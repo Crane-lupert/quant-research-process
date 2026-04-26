@@ -20,7 +20,7 @@ The artifacts are grouped into:
 Companion public repos (linked separately):
 - A 212-factor Open Asset Pricing replication project with mechanism
   classification and a Streamlit dashboard.
-- An in-flight Schedule 13D Item 4 intent classification project.
+- A 13D Item 4 intent classification project (Project Y, killed 2026-04-26 per pre-registered data-validity contracts — see `retrospectives/2026-04-26-data-validity-contract-failure-killed.md`).
 
 Operational live-trading repos are private by design — secrecy is part of
 the discipline. This repo exists to share the *process*, not the alpha.
@@ -45,18 +45,23 @@ If you only have 5 minutes:
 
 If you have 20 minutes, add:
 
-4. **[retrospectives/2026-04-26-cross-sectional-overnight-25-wave-arc.md](retrospectives/2026-04-26-cross-sectional-overnight-25-wave-arc.md)**
+4. **[retrospectives/2026-04-26-data-validity-contract-failure-killed.md](retrospectives/2026-04-26-data-validity-contract-failure-killed.md)**
+   — second sacrificial-pilot retrospective with a distinct failure mode
+   from #1 (input-layer data-validity contract failure vs output-layer
+   kill-gate firing). Together these two demonstrate awareness of both
+   abandonment trigger types.
+5. **[retrospectives/2026-04-26-cross-sectional-overnight-25-wave-arc.md](retrospectives/2026-04-26-cross-sectional-overnight-25-wave-arc.md)**
    — 25 waves of overnight research (28 archived nulls + 5 promotables
    + 10 methodology lessons) on a crypto live-research repo.
-5. **[retrospectives/2026-04-26-multi-vendor-data-4-day-arc.md](retrospectives/2026-04-26-multi-vendor-data-4-day-arc.md)**
+6. **[retrospectives/2026-04-26-multi-vendor-data-4-day-arc.md](retrospectives/2026-04-26-multi-vendor-data-4-day-arc.md)**
    — 4-day manual progression on a KR equities live-research repo,
    surfacing a survivorship-bias asymmetry specific to single-side
    markets (12 lessons).
-6. **[runbooks/multi-agent-fanout-runbook.md](runbooks/multi-agent-fanout-runbook.md)**
+7. **[runbooks/multi-agent-fanout-runbook.md](runbooks/multi-agent-fanout-runbook.md)**
    — the 7-element prompt template + atomic commit + manifest+checkpoint
    resumability pattern that produced the parallel research throughput
    in the retrospectives above.
-7. **[runbooks/standalone-live-research-bootstrap.md](runbooks/standalone-live-research-bootstrap.md)**
+8. **[runbooks/standalone-live-research-bootstrap.md](runbooks/standalone-live-research-bootstrap.md)**
    — Day 0 setup for a new live-research repo (directory layout,
    shared/ 4-module pattern, hooks, skill installs, promotion checklist).
 
@@ -67,7 +72,7 @@ If you have 20 minutes, add:
 | Signal | Where to find it |
 |---|---|
 | **Pre-registration discipline** (kill gates, abandon criteria, hard timeboxes) | sacrificial-pilot retrospective; sacrificial-pilot pattern in standalone-bootstrap §10 |
-| **Honest negative results** (28 archived nulls, 11 archived REJECTs, sign-reversed sacrificial-pilot result published as the deliverable) | 25-wave arc, 4-day arc, sacrificial-pilot retrospective |
+| **Honest negative results** (28 archived nulls, 11 archived REJECTs, two sacrificial-pilot retrospectives published as the deliverable — output-layer kill gate firing AND input-layer data-validity contract failure) | 25-wave arc, 4-day arc, both sacrificial-pilot retrospectives |
 | **Validation rigor** (ADF+KPSS, block-permutation, walk-forward sign-stability, short-window collapse extension, LS-vs-LO asymmetry, cost-cliff sweep) | research-promotion-gates runbook |
 | **Honest stat→product separation** (no leaping from p-value to claim, no leaping from in-sample to OOS) | factor-zoo completion review; promotion-gates §2-§4 |
 | **Reproducibility infrastructure** (manifest+checkpoint, atomic commits, .trash/ pattern, incremental save+resume) | multi-agent-fanout runbook §3-§5; factor-zoo completion review Finding 4 |

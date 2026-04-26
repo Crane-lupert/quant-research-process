@@ -5,10 +5,14 @@
 > step before committing to any new research project, to avoid building
 > heavily-scooped territory.
 >
-> Companion projects: an in-flight activist-intent-LLM repo (cross-sectional
-> intent classification of 13D Item 4 text) is published separately. This
-> case study covers the survey logic that informed the in-flight project's
-> edge claims.
+> Companion project (status update): the activist-intent classifier this
+> survey informed (Project Y) was killed on 2026-04-26 per pre-registered
+> data-validity contracts. The labeler feedback that triggered this prior-art
+> survey survives as `docs/principles.md §6.7 (LLM-derived Signal 5
+> principles)` in the workflow archive; the abandonment is documented in
+> `retrospectives/2026-04-26-data-validity-contract-failure-killed.md`. This
+> survey, conducted before the data-validity collapse was visible, retains
+> its independent value as a prior-art map of the 13D activist landscape.
 
 **Survey date**: 2026-04
 **Trigger**: A domain-expert labeler started annotating a 30-item oracle set
